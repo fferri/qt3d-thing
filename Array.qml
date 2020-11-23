@@ -36,6 +36,10 @@ Entity {
                             : repeatedEntity.index == root.lastIndex && lastItemDelegate
                               ? lastItemDelegate
                               : itemDelegate
+
+                Component.onCompleted: {
+                    object.index2 = index;
+                }
             }
         }
     }

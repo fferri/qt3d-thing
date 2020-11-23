@@ -17,12 +17,14 @@ Entity {
         transform.rotationZ: 5
 
         itemDelegate: Entity {
+            property int index2
+
             components: [
                 SphereMesh {
                     radius: 1.0
                 },
                 PhongMaterial {
-                    diffuse: Qt.rgba(array.model.index / 100, 0.5, 0.5, 1.0)
+                    diffuse: Qt.rgba(index2 / 100, 0.5, 0.5, 1.0)
                     shininess: 75
                 }
             ]
